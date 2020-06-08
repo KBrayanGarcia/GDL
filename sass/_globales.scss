@@ -1,0 +1,40 @@
+$fuente1: 'Open Sans', sans-serif;
+$fuente2: 'PT Sans', sans-serif;
+$colorPrincipal: #fe4918;
+$colorSecundario: #353535;
+$colorSecundario2: #2e2e2e;
+$colorClaro: white;
+@mixin fuente($fuente) {
+     @if $fuente == $fuente1{
+          font-family: $fuente1;
+          font-weight: 400;
+     }@else{
+          font-family: $fuente2;
+          text-transform: uppercase;
+     }
+     
+}
+@mixin container(){
+     max-width: 1200px;
+     width: 95%;
+     margin: 0 auto;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html{
+     font-size: 10px; // 10px = 1rem;
+     @include media(tablets){
+          font-size: 14px;
+     }
+     @include media(desktop-l){
+          font-size: 16px;
+     }
+     
+}
+a{
+     text-decoration: none;
+}

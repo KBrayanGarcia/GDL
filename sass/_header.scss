@@ -1,0 +1,50 @@
+.header{
+     background-image: url('../img/encabezado.jpg');
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+     &__contenedor{
+          @include container();
+          max-width: 900px;
+     }
+     &__hero{
+          margin-top: 20px;
+     }
+     &__fechas{
+          display: flex;
+          justify-content: space-between;
+     }
+     &__icono-fechas{
+          margin-right: 5px;
+          font-size: 3rem;
+          color: $colorPrincipal;
+     }
+     &__descri-fechas{
+          font-size: 1.5rem;
+          color: $colorClaro;
+          text-transform: uppercase;
+          @include fuente($fuente1);
+     }
+     &__contenedor-titulo{
+          margin-top:20px;
+          text-align: center;
+     }
+     &__titulo{
+          word-spacing: 20px;
+          margin: 0;
+          font-size: 4rem;
+          color: $colorClaro;
+          @include fuente($fuente2);
+          @include media(tablets){
+               font-size: 6rem;
+          }
+          @include media(desktop-l){
+               font-size: 9rem;
+          }
+     }
+     &__slogan{
+          color: $colorClaro;
+          @include fuente($fuente1);
+     }
+}
+@import 'redes.scss';

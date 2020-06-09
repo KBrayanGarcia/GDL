@@ -1,0 +1,67 @@
+.navBar{
+     background-color: $colorSecundario;
+     &__contenedor{
+          padding: 10px 0;
+          @include container();
+          @include media(tablets){
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+          }
+     }
+     &__barra{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+     &__titulo{
+          @include fuente($fuente2);
+          color: $colorClaro;
+          font-size: 3rem;
+     }
+     &__contenedor-hamburguer{
+          @include media(tablets){
+               display: none;
+          }
+     }
+     &__icono-hamburguer{
+          font-size: 3rem;
+          color: $colorClaro;
+     }
+     &__contenedor-enlaces{
+          max-height: 0;
+          overflow: hidden;
+          transition:all .3s ease-in-out;
+          @include media(tablets){
+               max-height: initial;
+          }
+     }
+     &__contenedor-enlaces.mostrar{
+          max-height: 500px;
+     }
+     &__enlace{
+          @include fuente($fuente2);
+          text-transform: uppercase;
+          color: $colorClaro;
+          padding: 10px;
+          display: block;
+          transition:all .3s ease-in-out;
+          @include media(tablets){
+               display: inline-block;
+               margin-right: 5px;
+          }
+          &:hover{
+               background-color: $colorPrincipal;
+          }
+          &:nth-child(4){
+               padding: 10px;
+               color: $colorPrincipal;
+               border: 1px solid $colorPrincipal;
+               &:hover{
+                    color: $colorClaro;
+               }
+          }
+     }
+}
+
+ 

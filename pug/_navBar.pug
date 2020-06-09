@@ -1,0 +1,10 @@
+nav.navBar
+     .navBar__contenedor
+          .navBar__barra
+               .navBar__contenedor__titulo
+                    h2.navBar__titulo GDLWEBCAMP
+               .navBar__contenedor-hamburguer
+                    i(class="fas fa-bars navBar__icono-hamburguer")
+          .navBar__contenedor-enlaces
+               each enlace in paginas
+                    a(href="" class="navBar__enlace")=enlace

@@ -1,16 +1,16 @@
 .redes{
-     padding: 10px;
-     &__contenedor{
-          display: flex;
-          justify-content: center;
-     }
-     &__icono{
-          font-size: 3rem;
-          color: $colorClaro;
-          margin-right:15px;
-          @include media(tablets){
-               font-size: 2rem;
-          }
-     }
+  padding: 10px;
+  &__contenedor{
+    display: flex;
+    justify-content: center;
+  }
+  &__icono{
+    font-size: 3rem;
+    color: $colorClaro;
+    margin-right:15px;
+    @include media(tablets){
+      font-size: 2rem;
+    }
+  }
      
 }

@@ -1,0 +1,11 @@
+.detalles-conf{
+  padding: 10px 0;
+  &__contenedor{
+    @include container();
+  }
+  &__descripcion{
+    font-size: 1.1rem;
+    text-align: center;
+    @include fuente($fuente1);
+  }
+}

@@ -26,12 +26,12 @@ $colorClaro: white;
 }
 html{
 	line-height: 1.5;
-	font-size: 13px; // 10px = 1rem;
+	font-size: 14px; // 10px = 1rem;
 	@include media(tablets){
-		font-size: 14px;
+		font-size: 16px;
 	}
 	@include media(desktop-l){
-		font-size: 16px;
+		font-size: 18px;
 	}
      
 }

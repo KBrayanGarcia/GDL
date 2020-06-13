@@ -345,7 +345,8 @@ template {
 }
 
 html {
-  font-size: 10px;
+  line-height: 1.5;
+  font-size: 13px;
 }
 @media (min-width: 768px) {
   html {
@@ -360,6 +361,12 @@ html {
 
 a {
   text-decoration: none;
+}
+
+.boton {
+  padding: 10px 15px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
 }
 
 .titulo {
@@ -408,7 +415,7 @@ a {
   color: #fe4918;
 }
 .header__descri-fechas {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: white;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
@@ -421,7 +428,7 @@ a {
 .header__titulo {
   word-spacing: 20px;
   margin: 0;
-  font-size: 4rem;
+  font-size: 3.4rem;
   color: white;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
@@ -547,6 +554,100 @@ a {
 .detalles-conf__descripcion {
   font-size: 1.1rem;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.programas {
+  position: relative;
+}
+.programas__video {
+  height: 430px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .programas__video {
+    height: 500px;
+  }
+}
+.programas__contenedor-flotado {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .programas__contenedor-flotado {
+    display: flex;
+    align-items: center;
+  }
+}
+.programas__contenedor {
+  padding: 10px;
+  height: 100%;
+  background-color: white;
+}
+@media (min-width: 768px) {
+  .programas__contenedor {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: initial;
+    width: 50%;
+  }
+}
+.programas__navBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #fe4918;
+}
+@media (min-width: 768px) {
+  .programas__navBar {
+    flex-direction: row;
+    padding: 10px;
+  }
+}
+.programas__enlace-navBar {
+  padding: 5px 5px 5px 0;
+  color: #2e2e2e;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+.programas__enlace-navBar:hover {
+  color: white;
+  background-color: #353535;
+}
+.programas__enlace-icono {
+  margin: 0 5px;
+  color: #fe4918;
+}
+.programas__boton {
+  float: right;
+  color: white;
+  background-color: #fe4918;
+}
+
+.evento {
+  padding: 10px 0;
+  border-bottom: 1px solid #2e2e2e;
+}
+.evento:last-of-type {
+  border-bottom: none;
+}
+.evento__titulo {
+  color: #fe4918;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+.evento__icono {
+  margin-right: 5px;
+  color: #fe4918;
+}
+.evento span {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }

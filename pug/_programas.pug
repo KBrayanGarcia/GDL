@@ -1,0 +1,19 @@
+main.programas
+  .programas__video-contenedor
+    video(src="video/video.mp4" class="programas__video")
+  .programas__contenedor-flotado
+    .programas__contenedor
+      +TitulosSeccion('Programas del evento')
+      .programas__navBar
+        a(href="" class="programas__enlace-navBar") 
+          i(class="fas fa-code programas__enlace-icono") 
+          |Talleres
+        a(href="" class="programas__enlace-navBar") 
+          i(class="fas fa-comment programas__enlace-icono") 
+          |Conferencias
+        a(href="" class="programas__enlace-navBar")
+          i(class="fas fa-university programas__enlace-icono") 
+          |Seminarios
+      each evento in programas
+        +cajaEvento(evento.titulo, evento.hora, evento.fecha, evento.instructor)
+      a(href class="programas__boton boton") ver todas

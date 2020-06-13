@@ -25,7 +25,8 @@ $colorClaro: white;
 	box-sizing: border-box;
 }
 html{
-	font-size: 10px; // 10px = 1rem;
+	line-height: 1.5;
+	font-size: 13px; // 10px = 1rem;
 	@include media(tablets){
 		font-size: 14px;
 	}
@@ -36,4 +37,8 @@ html{
 }
 a{
 	text-decoration: none;
+}
+.boton{
+	padding: 10px 15px;
+	@include fuente($fuente2);
 }

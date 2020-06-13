@@ -1,4 +1,37 @@
+-
+  programas= 
+  [
+    {
+      "titulo": "html,css y JavaScript",
+      "hora": "16:00",
+      "fecha": "10 de diciembre",
+      "instructor": "Juan pablo de la torre valdez"
+    },
+    {
+      "titulo": "Responsive design",
+      "hora": "20:00",
+      "fecha": "10 de diciembre",
+      "instructor": "Juan pablo de la torre valdez"
+    }
+  ]
+
+  
 -var paginas = ['Conferencia', 'Calendario', 'invitados', 'Reservaciones']
+
 mixin TitulosSeccion(titulo)
   .titulo
     h2=titulo
+mixin cajaEvento(titulo, hora, fecha, instructor)
+  .evento
+    h2.evento__titulo=titulo
+    .evento__detalles
+      p 
+        i(class="fas fa-clock evento__icono")
+        span=hora
+      p 
+        i(class="fas fa-calendar evento__icono")
+        span=fecha
+      p 
+        i(class="fas fa-user evento__icono")
+        span=instructor
+

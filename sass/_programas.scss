@@ -1,0 +1,79 @@
+.programas{
+  position: relative;
+  &__video{
+    height: 430px;
+    width: 100%;
+    @include media(tablets){
+      height: 500px;
+    }
+  }
+  &__contenedor-flotado{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    @include container();
+    @include media(tablets){
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__contenedor{
+    padding: 10px;
+    height: 100%;
+    background-color: $colorClaro;
+    @include media(tablets){
+      background-color: rgba($colorClaro, .70);
+      height: initial;
+      width: 50%;
+    }
+  }
+  &__navBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid $colorPrincipal;
+    @include media(tablets){
+      flex-direction: row;
+      padding: 10px;
+    }
+  }
+  &__enlace-navBar{
+    padding: 5px 5px 5px 0;
+    color: $colorSecundario2;
+    @include fuente($fuente2);
+    &:hover{
+      color: $colorClaro;
+      background-color: $colorSecundario;
+    }
+  }
+  &__enlace-icono{
+    margin: 0 5px;
+    color: $colorPrincipal;
+  }
+  &__boton{
+    float: right;
+    color: $colorClaro;
+    background-color: $colorPrincipal;
+  }
+}
+.evento{
+  padding: 10px 0;
+  border-bottom: 1px solid $colorSecundario2;
+  &:last-of-type{
+    border-bottom: none;
+  }
+  &__titulo{
+    color: $colorPrincipal;
+    @include fuente($fuente2);
+  }
+  &__icono{
+    margin-right: 5px;
+    color: $colorPrincipal;
+  }
+  span{
+    @include fuente($fuente1);
+  }
+}

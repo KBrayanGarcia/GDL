@@ -19,7 +19,7 @@
     color: $colorPrincipal;
   }
   &__descri-fechas{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: $colorClaro;
     text-transform: uppercase;
     @include fuente($fuente1);
@@ -31,7 +31,7 @@
   &__titulo{
     word-spacing: 20px;
     margin: 0;
-    font-size: 4rem;
+    font-size: 3.4rem;
     color: $colorClaro;
     @include fuente($fuente2);
     @include media(tablets){

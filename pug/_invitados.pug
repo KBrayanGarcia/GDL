@@ -1,0 +1,5 @@
+section.invitados
+  +TitulosSeccion('Nuestros invitados')
+  .invitados__contenedor
+    each invitado in invitados
+      +cajaInvitado(invitado.nombre, invitado.apellido, invitado.imagen)

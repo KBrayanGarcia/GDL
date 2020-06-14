@@ -1,0 +1,72 @@
+.invitados{
+  @include espacioSect();
+  &__contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include container();
+    margin-top: 20px;
+  }
+}
+.invitado{
+  margin-bottom: 10px;
+  height: 13rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex: 0 0 calc(100% - 10px);
+  z-index: 2;
+  align-items: flex-end;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  @include media(movil-l){
+    flex: 0 0 calc(50% - 10px);
+  }
+  @include media(tablets){
+    flex: 0 0 calc(33.3% - 10px);
+  }
+  &:hover &__nombre{
+    max-height: 0;
+    padding: 0 10px;
+  }
+  &:hover{
+    background-size: 120%;
+    &::before{
+      backdrop-filter: grayscale(0%);
+    }
+  }
+  &::before{
+    position: absolute;
+    content: ' ';
+    backdrop-filter: grayscale(100%);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+  }
+  &__nombre{
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 3.125rem;
+    max-height: 100px;
+    color: $colorPrincipal;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba($colorSecundario2, .70);
+    transition: all .3s ease-in-out;
+    @include fuente($fuente2);
+  }
+}

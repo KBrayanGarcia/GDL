@@ -1,26 +1,16 @@
--
-  programas= 
-  [
-    {
-      "titulo": "html,css y JavaScript",
-      "hora": "16:00",
-      "fecha": "10 de diciembre",
-      "instructor": "Juan pablo de la torre valdez"
-    },
-    {
-      "titulo": "Responsive design",
-      "hora": "20:00",
-      "fecha": "10 de diciembre",
-      "instructor": "Juan pablo de la torre valdez"
-    }
-  ]
+include _programasBd.pug
+include _invitadosBd.pug
 
-  
 -var paginas = ['Conferencia', 'Calendario', 'invitados', 'Reservaciones']
+
+mixin cajaInvitado(nombre, apellido, imagen)
+  .invitado(style=`background-image:url('${imagen}')`)
+    p.invitado__nombre=`${nombre} ${apellido}`
 
 mixin TitulosSeccion(titulo)
   .titulo
     h2=titulo
+
 mixin cajaEvento(titulo, hora, fecha, instructor)
   .evento
     h2.evento__titulo=titulo

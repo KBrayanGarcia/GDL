@@ -1,10 +1,15 @@
 .programas{
-  &__imagen-Fondo{
+  @include media(tablets){
     background-image: url('../img/programas.png');
     background-position: center;
     background-size: cover;
+  }
+  &__imagen-Fondo{
     @include container();
     @include media(tablets){
+      display: flex;
+      align-items: center;
+      height: 900px;
       @include espacioSect();
     }
   }

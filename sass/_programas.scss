@@ -1,27 +1,17 @@
 .programas{
-  position: relative;
-  &__video{
-    height: 430px;
-    width: 100%;
-    @include media(tablets){
-      height: 500px;
-    }
-  }
-  &__contenedor-flotado{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+  &__imagen-Fondo{
+    background-image: url('../img/programas.png');
+    background-position: center;
+    background-size: cover;
     @include container();
     @include media(tablets){
-      display: flex;
-      align-items: center;
+      @include espacioSect();
     }
   }
   &__contenedor{
+    height: auto;
+    overflow: hidden;
     padding: 10px;
-    height: 100%;
     background-color: $colorClaro;
     @include media(tablets){
       background-color: rgba($colorClaro, .70);

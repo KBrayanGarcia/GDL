@@ -544,7 +544,7 @@ a {
 }
 
 .detalles-conf {
-  padding: 10px 0;
+  padding: 50px 0;
 }
 .detalles-conf__contenedor {
   max-width: 1100px;
@@ -552,43 +552,30 @@ a {
   margin: 0 auto;
 }
 .detalles-conf__descripcion {
+  margin-top: 15px;
   font-size: 1.1rem;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 
-.programas {
-  position: relative;
-}
-.programas__video {
-  height: 430px;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .programas__video {
-    height: 500px;
-  }
-}
-.programas__contenedor-flotado {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.programas__imagen-Fondo {
+  background-image: url("../img/programas.png");
+  background-position: center;
+  background-size: cover;
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .programas__contenedor-flotado {
-    display: flex;
-    align-items: center;
+  .programas__imagen-Fondo {
+    padding: 50px 0;
   }
 }
 .programas__contenedor {
+  height: auto;
+  overflow: hidden;
   padding: 10px;
-  height: 100%;
   background-color: white;
 }
 @media (min-width: 768px) {

@@ -1,9 +1,10 @@
 .detalles-conf{
-  padding: 10px 0;
+  @include espacioSect();
   &__contenedor{
     @include container();
   }
   &__descripcion{
+    margin-top: 15px;
     font-size: 1.1rem;
     text-align: center;
     @include fuente($fuente1);

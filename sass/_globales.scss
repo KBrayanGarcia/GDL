@@ -18,6 +18,9 @@ $colorClaro: white;
 	width: 95%;
 	margin: 0 auto;
 }
+@mixin espacioSect(){
+  padding: 50px 0;
+}
 
 *{
 	margin: 0;

@@ -1,5 +1,6 @@
 include _programasBd.pug
 include _invitadosBd.pug
+include _contadorBd.pug
 
 -var paginas = ['Conferencia', 'Calendario', 'invitados', 'Reservaciones']
 
@@ -24,4 +25,9 @@ mixin cajaEvento(titulo, hora, fecha, instructor)
       p 
         i(class="fas fa-user evento__icono")
         span=instructor
+mixin cajaContador(numero, tipo)
+  .contador
+    .contador__contenedor
+      p.contador__numero=numero
+      p.contador__tipo=tipo
 

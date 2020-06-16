@@ -1,0 +1,5 @@
+section.precios
+  +TitulosSeccion('Precios')
+  .precios__contenedor
+    each precio in precios
+      +cajaPrecio(precio.titulo, precio.precio, precio.beneficios)

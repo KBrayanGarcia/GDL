@@ -1,6 +1,7 @@
 include _programasBd.pug
 include _invitadosBd.pug
 include _contadorBd.pug
+include _preciosBd.pug
 
 -var paginas = ['Conferencia', 'Calendario', 'invitados', 'Reservaciones']
 
@@ -31,3 +32,13 @@ mixin cajaContador(numero, tipo)
       p.contador__numero=numero
       p.contador__tipo=tipo
 
+mixin cajaPrecio(titulo, precio, beneficios)
+  .precio
+    .precio__contenedor
+      p(class="precio__tipo")=titulo
+      p.precio__cantidad  $#{precio}
+      ul.precio__lista-beneficios
+        each beneficio in beneficios
+          li.precio__beneficio=beneficio
+      .precio__boton-contenedor
+        a(href="" class="boton precio__boton") comprar

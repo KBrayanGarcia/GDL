@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -367,6 +368,10 @@ a {
   padding: 10px 15px;
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
+}
+
+li {
+  list-style: none;
 }
 
 .titulo {
@@ -787,4 +792,90 @@ a {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+}
+
+.precios__contenedor {
+  padding: 30px 0;
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .precios__contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.precio {
+  border: 1px solid #e1e1e1;
+  padding: 50px 0;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 768px) {
+  .precio {
+    margin-bottom: none;
+    flex: 0 0 calc(33.3% - 10px);
+  }
+  .precio:hover {
+    box-shadow: 0px 0px 15px 0px #000000;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+}
+.precio:last-of-type {
+  margin-bottom: 0;
+}
+.precio__tipo {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fe4918;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+.precio__cantidad {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+.precio__lista-beneficios {
+  text-align: center;
+}
+.precio__beneficio {
+  padding: 10px 0;
+  color: #868686;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.precio__beneficio:before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  display: inline-block;
+  font-size: 20px;
+  /* font-weight lo hace aparecer */
+  font-weight: 900;
+  padding-right: 5px;
+  color: green;
+}
+.precio__boton-contenedor {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.precio__boton {
+  border: 2px solid #fe4918;
+  background-color: white;
+  color: #fe4918;
+  transition: all 0.3s ease;
+}
+.precio__boton:hover {
+  background-color: #fe4918;
+  color: white;
 }

@@ -4,6 +4,7 @@ $colorPrincipal: #fe4918;
 $colorSecundario: #353535;
 $colorSecundario2: #2e2e2e;
 $colorClaro: white;
+$colorClaro-secundario: #868686;
 @mixin fuente($fuente) {
 	@if $fuente == $fuente1{
 		font-family: $fuente1;
@@ -44,4 +45,7 @@ a{
 .boton{
 	padding: 10px 15px;
 	@include fuente($fuente2);
+} 
+li{
+	list-style: none;
 }

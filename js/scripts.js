@@ -10,3 +10,13 @@ function hideShow(){
           enlacesContainer.classList.add('mostrar');
      }
 }
+
+var map = L.map('mapa').setView([19.505209, -99.084792], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([19.505209, -99.084792]).addTo(map)
+    .bindPopup('Creación de paginas web estaticas')
+    .openPopup();

@@ -2,6 +2,7 @@ include _programasBd.pug
 include _invitadosBd.pug
 include _contadorBd.pug
 include _preciosBd.pug
+include _testimonialesBd.pug
 
 -var paginas = ['Conferencia', 'Calendario', 'invitados', 'Reservaciones']
 
@@ -42,3 +43,11 @@ mixin cajaPrecio(titulo, precio, beneficios)
           li.precio__beneficio=beneficio
       .precio__boton-contenedor
         a(href="" class="boton precio__boton") comprar
+mixin cajaTestimonial(comentario,imagen, nombre,puesto)
+  .testimonio
+    p.testimonio__comentario=comentario
+    .testimonio__datos
+      img(src=""+imagen, alt="Imagen de perfil" class="testimonio__foto")
+      .testimonio__datos-personales
+        p.testimonio__nombre=nombre
+        p.testimonio__puesto=puesto

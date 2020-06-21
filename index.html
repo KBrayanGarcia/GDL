@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>GDL WebCamp</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&amp;family=PT+Sans:wght@700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/estilos.css"/>
     <script src="https://kit.fontawesome.com/42c004fb79.js" crossorigin="anonymous"></script>
@@ -170,6 +171,42 @@
         </div>
       </div>
     </section>
+    <div id="mapa"></div>
+    <div class="testimoniales">
+      <div class="titulo">
+        <h2>Testimoniales</h2>
+      </div>
+      <div class="testimoniales__contenedor">
+        <div class="testimonio">
+          <p class="testimonio__comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto maiores necessitatibus facilis ratione. Facilis.</p>
+          <div class="testimonio__datos"><img class="testimonio__foto" src="img/testimonial.jpg" alt="Imagen de perfil"/>
+            <div class="testimonio__datos-personales">
+              <p class="testimonio__nombre">Oswaldo Aponte Escobedo</p>
+              <p class="testimonio__puesto">Diseñador en @prisma</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio">
+          <p class="testimonio__comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto maiores necessitatibus facilis ratione. Facilis.</p>
+          <div class="testimonio__datos"><img class="testimonio__foto" src="img/testimonial.jpg" alt="Imagen de perfil"/>
+            <div class="testimonio__datos-personales">
+              <p class="testimonio__nombre">Oswaldo Aponte Escobedo</p>
+              <p class="testimonio__puesto">Diseñador en @prisma</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonio">
+          <p class="testimonio__comentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto maiores necessitatibus facilis ratione. Facilis.</p>
+          <div class="testimonio__datos"><img class="testimonio__foto" src="img/testimonial.jpg" alt="Imagen de perfil"/>
+            <div class="testimonio__datos-personales">
+              <p class="testimonio__nombre">Oswaldo Aponte Escobedo</p>
+              <p class="testimonio__puesto">Diseñador en @prisma</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

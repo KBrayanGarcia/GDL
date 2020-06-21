@@ -374,6 +374,10 @@ li {
   list-style: none;
 }
 
+#mapa {
+  height: 250px;
+}
+
 .titulo {
   text-align: center;
 }
@@ -878,4 +882,71 @@ li {
 .precio__boton:hover {
   background-color: #fe4918;
   color: white;
+}
+
+.testimoniales__contenedor {
+  padding: 20px 0;
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .testimoniales__contenedor {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.testimonio {
+  border: 1px solid #e1e1e1;
+  padding: 15px;
+  margin: 10px 5px;
+  flex: 0 0 calc(33.3% - 10px);
+}
+.testimonio__comentario {
+  text-align: justify;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.testimonio__comentario:before {
+  content: ' " ';
+  position: absolute;
+  font-size: 3.125rem;
+  left: 5px;
+  top: -3px;
+  line-height: 1;
+  bottom: 0;
+  color: #fe4918;
+}
+.testimonio__datos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonio__foto {
+  flex: 0 0 calc(20% - 10px);
+  width: 20%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonio__datos-personales {
+  flex: 0 0 calc(80% - 10px);
+}
+.testimonio__nombre {
+  font-size: 1rem;
+  color: #fe4918;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+.testimonio__puesto {
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-weight: 600;
 }

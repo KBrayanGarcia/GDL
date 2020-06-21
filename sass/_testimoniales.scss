@@ -1,0 +1,62 @@
+.testimoniales{
+	&__contenedor{
+		padding: 20px 0 ;
+		@include media(tablets){
+			display: flex;
+			justify-content: space-between;
+		}
+		@include container();
+	}
+}
+
+.testimonio{
+	border: 1px solid #e1e1e1;
+	padding: 15px;
+	margin: 10px 5px;
+	flex: 0 0 calc(33.3% - 10px);
+	&__comentario{
+		text-align: justify;
+		padding-left: 30px;
+		position: relative;
+		margin-bottom: 10px;
+		@include fuente($fuente1);
+		&:before{
+			content: ' " ';
+			position: absolute;
+			font-size: 3.125rem;
+			left: 5px;
+			top: -3px;
+			line-height: 1;
+			bottom: 0;
+			color: $colorPrincipal;
+		}
+	}
+	&__datos{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__foto{
+		flex: 0 0 calc(20% - 10px);
+		width: 20%;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+	}
+	&__datos-personales{
+		flex: 0 0 calc(80% - 10px);
+		
+	}
+	&__nombre{
+		font-size: 1rem;
+		color: $colorPrincipal;
+		@include fuente($fuente1);
+	}
+	&__puesto{
+		font-size: .7rem;
+		@include fuente($fuente1);
+		font-weight: 600;
+	}
+}

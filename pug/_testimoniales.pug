@@ -1,0 +1,5 @@
+.testimoniales
+	+TitulosSeccion('Testimoniales')
+	.testimoniales__contenedor
+		each testimonio in testimoniales
+			+cajaTestimonial(testimonio.comentario, testimonio.imagen, testimonio.nombre, testimonio.puesto)
